@@ -1,0 +1,98 @@
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 60px auto;
+    block-size: 100%;
+    background-color: rgb(235, 235, 235);
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgb(214, 214, 214);  
+    justify-content: space-between;
+    display: flex;
+}
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+.form-group input,
+.form-group select {
+    height: 150%;
+    width: 80%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    border-bottom:2px solid rgb(183, 176, 176);
+    border-top: 2px solid transparent;
+    background-color: rgb(233, 233, 233);
+}
+.form-group input[type="checkbox"] {
+    width: auto;
+}
+.form-group button {
+    padding: 10px 20px;
+    background-color: #619e8e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    font-size: large;
+    right: 10px;
+    position: absolute;
+    bottom: 20;
+    right: 0;
+    top: -2px;
+}
+.form-section {
+    margin-bottom: 20px;
+}
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+.form-row > div {
+    width: 45%;
+}
+.form-group {
+display: flex;
+align-items: center;
+}
+.form-group img {
+margin-right: 10px;
+margin-top: 5px;
+}
+@media (min-width: 900px) {
+    .form-section {
+        display: flex;
+        justify-content: space-between;
+    }
+    .form-section > div {
+        width: 48%;
+    }
+}
+@media (min-width: 700px) {
+    .form-group-password {
+        display: flex;
+        justify-content: space-between;
+    }
+    .form-group-password > input {
+        width: 45%;
+    }
+}
+@media (max-width: 500px) {
+    .container {
+        flex-direction: column;
+    }
+    .form-section {
+        flex-direction: column;
+    }
+    .form-row {
+        flex-direction: column;
+    }
+    .form-row > div {
+        width: 100%;
+    }
+    .form-section > div {
+        width: 100%;
+    }
+}
